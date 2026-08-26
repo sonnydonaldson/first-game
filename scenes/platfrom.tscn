@@ -12,6 +12,6 @@ texture = ExtResource("1_1cfhm")
 region_enabled = true
 region_rect = Rect2(0, 0.30948448, 15.442753, 8.49491)
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite2D" unique_id=1881399619]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1881399619]
 shape = SubResource("RectangleShape2D_f7vo3")
 one_way_collision = true
