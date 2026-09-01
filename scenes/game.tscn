@@ -3,6 +3,7 @@
 [ext_resource type="PackedScene" uid="uid://2n7o7b74f55q" path="res://scenes/character_body_2d.tscn" id="1_uwrxv"]
 [ext_resource type="Texture2D" uid="uid://hlclfoosa5ks" path="res://assets/sprites/world_tileset.png" id="2_yqjtg"]
 [ext_resource type="PackedScene" uid="uid://6bd4417kujyr" path="res://scenes/platfrom.tscn" id="3_lnu2h"]
+[ext_resource type="PackedScene" uid="uid://cogi2pmas3dew" path="res://scenes/coin.tscn" id="4_lbhrr"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_lnu2h"]
 texture = ExtResource("2_yqjtg")
@@ -277,37 +278,167 @@ rotation = 4.7186723
 position = Vector2(0, 53)
 shape = SubResource("WorldBoundaryShape2D_f7vo3")
 
-[node name="platfrom" parent="." unique_id=978688394 instance=ExtResource("3_lnu2h")]
+[node name="coin" type="Node" parent="." unique_id=1709426019]
+
+[node name="Area2D2" parent="coin" unique_id=28157182 instance=ExtResource("4_lbhrr")]
+position = Vector2(-1484, -65)
+
+[node name="Area2D3" parent="coin" unique_id=1984649302 instance=ExtResource("4_lbhrr")]
+position = Vector2(-1471, -65)
+
+[node name="Area2D4" parent="coin" unique_id=382243503 instance=ExtResource("4_lbhrr")]
+position = Vector2(-1459, -65)
+
+[node name="Area2D5" parent="coin" unique_id=170787374 instance=ExtResource("4_lbhrr")]
+position = Vector2(-1448, -65)
+
+[node name="Area2D6" parent="coin" unique_id=1916673698 instance=ExtResource("4_lbhrr")]
+position = Vector2(-1436, -65)
+
+[node name="Area2D7" parent="coin" unique_id=1699125539 instance=ExtResource("4_lbhrr")]
+position = Vector2(-1484, -76)
+
+[node name="Area2D8" parent="coin" unique_id=191028481 instance=ExtResource("4_lbhrr")]
+position = Vector2(-1471, -76)
+
+[node name="Area2D9" parent="coin" unique_id=90361730 instance=ExtResource("4_lbhrr")]
+position = Vector2(-1459, -76)
+
+[node name="Area2D10" parent="coin" unique_id=930368154 instance=ExtResource("4_lbhrr")]
+position = Vector2(-1448, -76)
+
+[node name="Area2D11" parent="coin" unique_id=737718634 instance=ExtResource("4_lbhrr")]
+position = Vector2(-1436, -76)
+
+[node name="Area2D12" parent="coin" unique_id=1054529360 instance=ExtResource("4_lbhrr")]
+position = Vector2(-1484, -87)
+
+[node name="Area2D13" parent="coin" unique_id=1671530249 instance=ExtResource("4_lbhrr")]
+position = Vector2(-1471, -87)
+
+[node name="Area2D14" parent="coin" unique_id=2032528002 instance=ExtResource("4_lbhrr")]
+position = Vector2(-1459, -87)
+
+[node name="Area2D15" parent="coin" unique_id=1594605057 instance=ExtResource("4_lbhrr")]
+position = Vector2(-1448, -87)
+
+[node name="Area2D16" parent="coin" unique_id=1545965521 instance=ExtResource("4_lbhrr")]
+position = Vector2(-1436, -87)
+
+[node name="Area2D" parent="coin" unique_id=270136435 instance=ExtResource("4_lbhrr")]
+position = Vector2(-963, -130)
+
+[node name="Area2D17" parent="coin" unique_id=1681650446 instance=ExtResource("4_lbhrr")]
+position = Vector2(-785, -55)
+
+[node name="Area2D18" parent="coin" unique_id=1520517878 instance=ExtResource("4_lbhrr")]
+position = Vector2(-840, -77)
+
+[node name="Area2D19" parent="coin" unique_id=1940265812 instance=ExtResource("4_lbhrr")]
+position = Vector2(-303, -29)
+
+[node name="Area2D20" parent="coin" unique_id=850930662 instance=ExtResource("4_lbhrr")]
+position = Vector2(244, -60)
+
+[node name="Area2D21" parent="coin" unique_id=707479986 instance=ExtResource("4_lbhrr")]
+position = Vector2(695, -10)
+
+[node name="Area2D22" parent="coin" unique_id=1155233306 instance=ExtResource("4_lbhrr")]
+position = Vector2(949, -80)
+
+[node name="Area2D23" parent="coin" unique_id=1026532316 instance=ExtResource("4_lbhrr")]
+position = Vector2(858, -31)
+
+[node name="Area2D24" parent="coin" unique_id=374395670 instance=ExtResource("4_lbhrr")]
+position = Vector2(1132, -59)
+
+[node name="Area2D25" parent="coin" unique_id=1770451030 instance=ExtResource("4_lbhrr")]
+position = Vector2(1023, -105)
+
+[node name="Area2D26" parent="coin" unique_id=1390587260 instance=ExtResource("4_lbhrr")]
+position = Vector2(1074, -84)
+
+[node name="Area2D27" parent="coin" unique_id=1815534435 instance=ExtResource("4_lbhrr")]
+position = Vector2(1286, 22)
+
+[node name="Area2D28" parent="coin" unique_id=964460221 instance=ExtResource("4_lbhrr")]
+position = Vector2(1217, -8)
+
+[node name="Area2D29" parent="coin" unique_id=300276993 instance=ExtResource("4_lbhrr")]
+position = Vector2(-487, -120)
+
+[node name="Area2D30" parent="coin" unique_id=1244406017 instance=ExtResource("4_lbhrr")]
+position = Vector2(-1425, -65)
+
+[node name="Area2D31" parent="coin" unique_id=1424449613 instance=ExtResource("4_lbhrr")]
+position = Vector2(-1425, -76)
+
+[node name="Area2D32" parent="coin" unique_id=154602920 instance=ExtResource("4_lbhrr")]
+position = Vector2(-1425, -87)
+
+[node name="Area2D33" parent="coin" unique_id=1710056026 instance=ExtResource("4_lbhrr")]
+position = Vector2(-1484, -98)
+
+[node name="Area2D34" parent="coin" unique_id=1212203633 instance=ExtResource("4_lbhrr")]
+position = Vector2(-1471, -98)
+
+[node name="Area2D35" parent="coin" unique_id=1160955207 instance=ExtResource("4_lbhrr")]
+position = Vector2(-1459, -98)
+
+[node name="Area2D36" parent="coin" unique_id=1938034161 instance=ExtResource("4_lbhrr")]
+position = Vector2(-1448, -98)
+
+[node name="Area2D37" parent="coin" unique_id=379107532 instance=ExtResource("4_lbhrr")]
+position = Vector2(-1436, -98)
+
+[node name="Area2D38" parent="coin" unique_id=1540068714 instance=ExtResource("4_lbhrr")]
+position = Vector2(-1425, -98)
+
+[node name="Area2D39" parent="coin" unique_id=203505554 instance=ExtResource("4_lbhrr")]
+position = Vector2(-1414, -65)
+
+[node name="Area2D40" parent="coin" unique_id=604837689 instance=ExtResource("4_lbhrr")]
+position = Vector2(-1414, -76)
+
+[node name="Area2D41" parent="coin" unique_id=1324190385 instance=ExtResource("4_lbhrr")]
+position = Vector2(-1414, -87)
+
+[node name="Area2D42" parent="coin" unique_id=714847320 instance=ExtResource("4_lbhrr")]
+position = Vector2(-1414, -98)
+
+[node name="platfrom" type="Node" parent="." unique_id=549231219]
+
+[node name="platfrom" parent="platfrom" unique_id=978688394 instance=ExtResource("3_lnu2h")]
 position = Vector2(-177, 4)
 
-[node name="platfrom2" parent="." unique_id=1892303400 instance=ExtResource("3_lnu2h")]
+[node name="platfrom2" parent="platfrom" unique_id=1892303400 instance=ExtResource("3_lnu2h")]
 position = Vector2(445, 21)
 
-[node name="platfrom4" parent="." unique_id=472769614 instance=ExtResource("3_lnu2h")]
+[node name="platfrom4" parent="platfrom" unique_id=472769614 instance=ExtResource("3_lnu2h")]
 position = Vector2(536, 22)
 
-[node name="AnimationPlayer" type="AnimationPlayer" parent="platfrom4" unique_id=9859492]
+[node name="AnimationPlayer" type="AnimationPlayer" parent="platfrom/platfrom4" unique_id=9859492]
 libraries/ = SubResource("AnimationLibrary_iywne")
 autoplay = &"move"
 
-[node name="platfrom3" parent="." unique_id=1458484885 instance=ExtResource("3_lnu2h")]
+[node name="platfrom3" parent="platfrom" unique_id=1458484885 instance=ExtResource("3_lnu2h")]
 position = Vector2(493, -3)
 
-[node name="platfrom6" parent="." unique_id=582636655 instance=ExtResource("3_lnu2h")]
+[node name="platfrom6" parent="platfrom" unique_id=582636655 instance=ExtResource("3_lnu2h")]
 position = Vector2(833, 14)
 
-[node name="platfrom7" parent="." unique_id=1035820901 instance=ExtResource("3_lnu2h")]
+[node name="platfrom7" parent="platfrom" unique_id=1035820901 instance=ExtResource("3_lnu2h")]
 position = Vector2(-660, -92)
 
-[node name="platfrom5" parent="." unique_id=539767516 instance=ExtResource("3_lnu2h")]
+[node name="platfrom5" parent="platfrom" unique_id=539767516 instance=ExtResource("3_lnu2h")]
 position = Vector2(-724, -29)
 
-[node name="platfrom8" parent="." unique_id=1227738454 instance=ExtResource("3_lnu2h")]
+[node name="platfrom8" parent="platfrom" unique_id=1227738454 instance=ExtResource("3_lnu2h")]
 position = Vector2(-788, -31)
 
-[node name="platfrom9" parent="." unique_id=1031331716 instance=ExtResource("3_lnu2h")]
+[node name="platfrom9" parent="platfrom" unique_id=1031331716 instance=ExtResource("3_lnu2h")]
 position = Vector2(-836, -33)
 
-[node name="AnimationPlayer" type="AnimationPlayer" parent="platfrom9" unique_id=1056549349]
+[node name="AnimationPlayer" type="AnimationPlayer" parent="platfrom/platfrom9" unique_id=1056549349]
 libraries/ = SubResource("AnimationLibrary_u5sy4")
 autoplay = &"up and down"
