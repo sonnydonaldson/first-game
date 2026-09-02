@@ -1,5 +1,6 @@
 [gd_scene format=3 uid="uid://dcyxcftwovq4j"]
 
+[ext_resource type="Script" uid="uid://cbwkfo6pavgc" path="res://scenes/slime.gd" id="1_n6pvg"]
 [ext_resource type="Texture2D" uid="uid://b7xulxkffdfc3" path="res://assets/sprites/slime_green.png" id="1_p2gj0"]
 [ext_resource type="PackedScene" uid="uid://blvwdlr0punbb" path="res://scenes/killzone.tscn" id="2_n6pvg"]
 
@@ -71,14 +72,27 @@ animations = [{
 size = Vector2(8, 9.5)
 
 [node name="slime" type="Node2D" unique_id=1187395502]
+script = ExtResource("1_n6pvg")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=698555804]
 sprite_frames = SubResource("SpriteFrames_f7vo3")
 autoplay = "default"
-frame_progress = 0.13176651
+frame_progress = 0.20420735
 
 [node name="killzone" parent="." unique_id=982369481 instance=ExtResource("2_n6pvg")]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="killzone" unique_id=381472933]
 position = Vector2(0, 6.75)
 shape = SubResource("RectangleShape2D_xqf3p")
+
+[node name="RayCastRight" type="RayCast2D" parent="." unique_id=444114771]
+position = Vector2(0, 6)
+target_position = Vector2(10, 0)
+
+[node name="RayCastleft" type="RayCast2D" parent="." unique_id=432783805]
+position = Vector2(0, 6)
+target_position = Vector2(-10, 0)
+
+[node name="raycastdown" type="RayCast2D" parent="." unique_id=183837385]
+position = Vector2(0, 6)
+target_position = Vector2(0, 11)
