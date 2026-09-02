@@ -5,6 +5,7 @@
 [ext_resource type="PackedScene" uid="uid://6bd4417kujyr" path="res://scenes/platfrom.tscn" id="3_lnu2h"]
 [ext_resource type="PackedScene" uid="uid://cogi2pmas3dew" path="res://scenes/coin.tscn" id="4_lbhrr"]
 [ext_resource type="PackedScene" uid="uid://blvwdlr0punbb" path="res://scenes/killzone.tscn" id="5_iywne"]
+[ext_resource type="PackedScene" uid="uid://dcyxcftwovq4j" path="res://scenes/slime.tscn" id="6_p57ef"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_lnu2h"]
 texture = ExtResource("2_yqjtg")
@@ -443,3 +444,29 @@ autoplay = &"up and down"
 [node name="CollisionShape2D" type="CollisionShape2D" parent="boundary killzone" unique_id=1729949265]
 position = Vector2(0, 53)
 shape = SubResource("WorldBoundaryShape2D_f7vo3")
+
+[node name="slimes" type="Node" parent="." unique_id=1351586371]
+
+[node name="slime" parent="slimes" unique_id=1187395502 instance=ExtResource("6_p57ef")]
+position = Vector2(-942, -124)
+
+[node name="slime2" parent="slimes" unique_id=18590455 instance=ExtResource("6_p57ef")]
+position = Vector2(-444, -109)
+
+[node name="slime3" parent="slimes" unique_id=1106938538 instance=ExtResource("6_p57ef")]
+position = Vector2(902, -44)
+
+[node name="slime4" parent="slimes" unique_id=531206243 instance=ExtResource("6_p57ef")]
+position = Vector2(1153, -43)
+
+[node name="slime5" parent="slimes" unique_id=801443433 instance=ExtResource("6_p57ef")]
+position = Vector2(1355, 20)
+
+[node name="slime6" parent="slimes" unique_id=1824674971 instance=ExtResource("6_p57ef")]
+position = Vector2(1064, -91)
+
+[node name="slime7" parent="slimes" unique_id=742060978 instance=ExtResource("6_p57ef")]
+position = Vector2(-1274, -59)
+
+[node name="slime8" parent="slimes" unique_id=1947624584 instance=ExtResource("6_p57ef")]
+position = Vector2(-1392, -59)
