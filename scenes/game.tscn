@@ -6,6 +6,8 @@
 [ext_resource type="PackedScene" uid="uid://cogi2pmas3dew" path="res://scenes/coin.tscn" id="4_lbhrr"]
 [ext_resource type="PackedScene" uid="uid://blvwdlr0punbb" path="res://scenes/killzone.tscn" id="5_iywne"]
 [ext_resource type="PackedScene" uid="uid://dcyxcftwovq4j" path="res://scenes/slime.tscn" id="6_p57ef"]
+[ext_resource type="FontFile" uid="uid://crmi4dklspoy6" path="res://assets/fonts/PixelOperator8-Bold.ttf" id="7_gee14"]
+[ext_resource type="FontFile" uid="uid://c0udlrmuadkt6" path="res://assets/fonts/PixelOperator8.ttf" id="8_0tnpc"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_lnu2h"]
 texture = ExtResource("2_yqjtg")
@@ -470,3 +472,22 @@ position = Vector2(-1274, -59)
 
 [node name="slime8" parent="slimes" unique_id=1947624584 instance=ExtResource("6_p57ef")]
 position = Vector2(-1392, -59)
+
+[node name="start" type="Label" parent="." unique_id=1024391719]
+offset_left = -38.0
+offset_top = -82.0
+offset_right = 38.0
+offset_bottom = -59.0
+theme_override_colors/font_color = Color(0.74992317, 0.3919662, 0.9823169, 1)
+theme_override_fonts/font = ExtResource("7_gee14")
+text = "Start"
+
+[node name="jump" type="Label" parent="." unique_id=1349693085]
+offset_left = -260.0
+offset_top = -44.0
+offset_right = -91.0
+offset_bottom = -34.0
+theme_override_colors/font_color = Color(0, 1, 1, 1)
+theme_override_fonts/font = ExtResource("8_0tnpc")
+theme_override_font_sizes/font_size = 9
+text = "press space bar to jump"
