@@ -1,5 +1,6 @@
 [gd_scene format=3 uid="uid://7215mgyjyeky"]
 
+[ext_resource type="Script" uid="uid://c72l7xpwl18wr" path="res://scenes/gamne_manger.gd" id="1_kvpfn"]
 [ext_resource type="PackedScene" uid="uid://2n7o7b74f55q" path="res://scenes/character_body_2d.tscn" id="1_uwrxv"]
 [ext_resource type="Texture2D" uid="uid://hlclfoosa5ks" path="res://assets/sprites/world_tileset.png" id="2_yqjtg"]
 [ext_resource type="PackedScene" uid="uid://6bd4417kujyr" path="res://scenes/platfrom.tscn" id="3_lnu2h"]
@@ -9,6 +10,7 @@
 [ext_resource type="FontFile" uid="uid://crmi4dklspoy6" path="res://assets/fonts/PixelOperator8-Bold.ttf" id="7_gee14"]
 [ext_resource type="FontFile" uid="uid://c0udlrmuadkt6" path="res://assets/fonts/PixelOperator8.ttf" id="8_0tnpc"]
 [ext_resource type="PackedScene" uid="uid://btvfx2kehayvf" path="res://scenes/hud.tscn" id="9_0tnpc"]
+[ext_resource type="PackedScene" uid="uid://bj5y2vwn0ljo8" path="res://scenes/main_menu.tscn" id="10_vtaks"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_lnu2h"]
 texture = ExtResource("2_yqjtg")
@@ -249,6 +251,9 @@ _data = {
 }
 
 [node name="game" type="Node2D" unique_id=1367361579]
+
+[node name="Gamne manger" type="Node" parent="." unique_id=736542201]
+script = ExtResource("1_kvpfn")
 
 [node name="CharacterBody2D" parent="." unique_id=1537074427 instance=ExtResource("1_uwrxv")]
 position = Vector2(1, 0)
@@ -498,3 +503,6 @@ text = "press space bar to jump"
 [node name="HUD" parent="UI" unique_id=1055209024 instance=ExtResource("9_0tnpc")]
 offset_left = 1.0
 offset_right = 1.0
+
+[node name="main menu" parent="UI" unique_id=475013404 instance=ExtResource("10_vtaks")]
+visible = false
